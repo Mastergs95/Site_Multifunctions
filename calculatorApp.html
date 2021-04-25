@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="styles.css" rel="stylesheet">
+    <script src="javascript.js"></script>
+    <title>My Budget App</title>
+  </head>
+  <body>
+
+    <nav>
+      <a href="todoApp.html">Todo App |</a>
+      <a href="budgetApp.html">Budget App |</a>
+      <a href="calculatorApp.html">Calculator App |</a>
+  </nav>
+
+    <h1>Calculator App</h1>
+    <div class="container">
+      <div class="header">Calculator</div>
+      <input type="text" id="textbox"   class="result">
+      <div class="first-row">
+        <input type="button" name=""  value="&radic;" class="global">
+        <input type="button" name=""  value="(" class="global">
+        <input type="button" name=""  value=")" class="global">
+        <input type="button" name=""  onclick="inserirOp('%')" value="%" class="global">
+      </div>
+      <div class="second-row">
+        <input type="button" name="" onclick="inserirValue(7)" value="7" class="global">
+        <input type="button" name="" onclick="inserirValue(8)" value="8" class="global">
+        <input type="button" name="" onclick="inserirValue(9)" value="9" class="global">
+        <input type="button" name="" onclick="inserirOp('/')" value="/" class="global">
+      </div>
+      <div class="third-row">
+        <input type="button" name="" onclick="inserirValue(4)" value="4" class="global">
+        <input type="button" name="" onclick="inserirValue(5)" value="5" class="global">
+        <input type="button" name="" onclick="inserirValue(6)" value="6" class="global">
+        <input type="button" name="" onclick="inserirOp('x')" value="X" class="global">
+      </div>
+      <div class="fourth-row">
+        <input type="button" name="" onclick="inserirValue(1)" id="n1"value="1" class="global">
+        <input type="button" name="" onclick="inserirValue(2)" value="2" class="global">
+        <input type="button" name="" onclick="inserirValue(3)" value="3" class="global">
+        <input type="button" name="" onclick="inserirOp('-')" value="-" class="global">
+      </div>
+      <div class="conflict">
+        <div class="left">
+          <input type="button" name="" onclick="inserirValue(0)" value="0" class=" big">
+          <input type="button" name="" value="." class=" small">
+          <input type="button" name="" value="Del" onclick="deleted()" class=" red small white-text top-margin">
+          <input type="button" name="" onclick=result() value="=" class=" green white-text big top-margin">
+        </div>
+        <div class="right">
+          <input type="button" name="" onclick="inserirOp('+')" value="+" class="global grey plus">
+        </div>
+      </div>
+    </div>
+  </body>

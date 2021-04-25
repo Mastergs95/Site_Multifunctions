@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="styles.css" rel="stylesheet">
+    <script src="javascript.js"></script>
+    <title>My Budget App</title>
+  </head>
+  <body>
+
+    <nav>
+      <a href="todoApp.html">Todo App |</a>
+      <a href="budgetApp.html">Budget App |</a>
+      <a href="calculatorApp.html">Calculator App |</a>
+      <a href="index.html">??? |</a>
+      <a href="index.html">???</a>
+  </nav>
+
+  <h1 id="Title">My budget App</h1>
+
+    <div id="rect2">
+
+    <br>
+    <br>
+      <div id="rect-internal">
+		<br>
+		<label>Please Enter Your Budget:</label>
+        <input id="budget_input"></input>
+        <button onClick="addBudget()">Ok</button>
+		<br>
+		<label>Please Enter Your Expense:</label>
+        <input id="expense_input"></input>
+        <button onClick="addExpenses()">Add</button>
+      </div>
+    </div>
+
+    <div id="rect3">
+
+        <br>
+        <br>
+          <div id="rect-internal">
+			<br>
+			<h2 id="budget">Budget:</h2>
+			<h2 id="expenses">Expenses:</h2>
+			<h2 id="balance">Balance:</h2>
+			<br>
+			<button onClick="saveBudget()">Save</button>
+			<button onClick="loadBudget()">Load</button>
+          </div>
+        </div>
+
+  </body>
+</html>
